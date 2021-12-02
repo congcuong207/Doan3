@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Register"
+    android:orientation="vertical">
+    taikhoan=findViewById(R.id.edt_taikhoan);
+    matkhau=findViewById(R.id.edt_matkhau);
+    hoten=findViewById(R.id.edt_hoten);
+    gioitinh=findViewById(R.id.edt_gioitinh);
+    ngaysinh=findViewById(R.id.edt_ngaysinh);
+    sdt=findViewById(R.id.edt_sodienthoai);
+    <TextView
+        android:paddingBottom="50dp"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_noti_hoten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/edt_hoten"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/butchi1"
+                android:hint="Họ tên" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_noti_gioitinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_gioitinh"
+
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/butchi1"
+                android:hint="Giới tính" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_noti_ngaysinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_ngaysinh"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/butchi1"
+                android:hint="Ngày Sinh" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_height="wrap_content"
+                android:text="+84"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edt_noti_sodienthoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_sodienthoai"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/white"
+                    android:drawableEnd="@drawable/butchi1"
+                    android:hint="Số điện thoại" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_noti_taikhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_taikhoan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/butchi1"
+                android:hint="Tài khoản"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_noti_matkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_matkhau"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/butchi1"
+                android:hint="Mật khẩu" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <Button
+        android:background="@drawable/bobutton"
+        android:gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_dangky"
+        android:textAllCaps="false"
+        android:text="Đăng ký"/>
+</LinearLayout>
+
+</LinearLayout>
